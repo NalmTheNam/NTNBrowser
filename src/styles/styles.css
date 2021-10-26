@@ -1,0 +1,131 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  text-align: center;
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Button and div */
+button {
+  border: none;
+  cursor: pointer;
+}
+
+button.close {
+  background: red;
+  color: white;
+}
+
+button.close:hover {
+  background: orange;
+}
+
+button.dark {
+  background: black;
+  color: white;
+}
+
+button.transparent {
+  background: transparent;
+}
+
+button.transparent:hover {
+  background: rgb(245, 245, 245, 0.3);
+}
+
+div.tabBar > button {
+  padding: 0 15px;
+}
+
+div.tabBar {
+  position: sticky;
+  background: lightblue;
+}
+
+/* Misc */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+hr {
+  border: 3px solid darkgray;
+}
+
+/* Classes */
+.absolute {
+  position: absolute;
+}
+
+.bottom {
+  bottom: 0;
+  color: "black";
+}
+
+.center {
+  text-align: center;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.fixed.center {
+  left: 38.5rem;
+}
+
+.left {
+  left: 0;
+  color: "black";
+}
+
+.right {
+  right: 0;
+  color: "black";
+}
+
+input[type=text].search {
+  padding: 12px 20px 5px 40px;
+  width: 100%;
+}
+
+.small {
+  font-size: 12.5px;
+}
+
+.top {
+  top: 0;
+  color: "black";
+}
